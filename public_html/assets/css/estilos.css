@@ -107,6 +107,164 @@ p {
   margin-bottom: 1rem;
 }
 
+.logo {
+  position: absolute;
+  top: 0px;
+  left: -190px;
+  width: 110px;
+  height: 110px;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.btn-traductor {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #2b004f; /* Fondo morado oscuro */
+  color: #ff00ff; /* Texto anaranjado neón */
+  border: 1px solid #ff00ff; /* Borde morado neón */
+  padding: 10px 15px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+  position: relative;
+  display: inline-block;
+  width: 100px; /* Ancho del selector */
+  cursor: pointer;
+  margin: 0 10px; /* Margen alrededor del selector */
+  text-align: center;
+}
+
+/* Estilo para la flecha del selector */
+.btn-traductor::after {
+  content: "▼"; /* Caracter para la flecha */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #ff00ff; /* Color de la flecha morado neón */
+  pointer-events: none;
+}
+
+/* Estilo para la lista de opciones */
+.btn-traductor option {
+  background-color: #2b004f; /* Fondo morado oscuro */
+  color: #ff00ff; /* Texto anaranjado neón */
+}
+
+/* Estilo al pasar el cursor sobre el selector */
+.btn-traductor:hover,
+.btn-traductor:focus {
+  background-color: #3d006d; /* Fondo morado más claro al pasar el cursor */
+  border-color: #ff00ff; /* Mantener el borde morado neón */
+}
+
+/* Estilo al seleccionar una opción */
+.btn-traductor:active {
+  background-color: #4e0091; /* Fondo morado aún más claro al seleccionar */
+}
+
+/* .search-container input,
+.search-container button {
+  margin: 5px;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+.searchable {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.highlight {
+  background-color: yellow;
+} */
+
+/* Estilos generales de la sección */
+.section.bg-light {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Estilo del título central */
+.section h2.text-center {
+  margin-bottom: 50px;
+  color: #343a40;
+}
+
+#testimonials {
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Ajusta este color para que se adapte al diseño de tu sitio */
+}
+
+.testimonial-item {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-item p {
+  font-size: 1rem;
+  color: #343a40;
+  line-height: 1.5;
+  flex-grow: 1; /* Asegura que el contenido del testimonio se expanda para llenar el espacio */
+}
+
+.testimonial-item footer {
+  color: #f85c70; /* Color rojo primario usado en tu sitio */
+  margin-top: 10px;
+}
+
+/* Estilos para la sección de premios */
+#awards {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.award-item {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center; /* Centra el contenido */
+}
+
+/* Estilo para el zoom de imágenes */
+.award-item img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  max-width: 250px; /* Máximo ancho de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+  transition: transform 0.5s ease; /* Transición suave para el zoom */
+  cursor: pointer; /* Cambia el cursor para indicar que es clickable */
+}
+
+.award-item img:hover {
+  transform: scale(1.5); /* Aumenta el tamaño de la imagen al pasar el cursor */
+}
+
+.award-item h4 {
+  color: #f85c70;
+  margin-bottom: 10px;
+}
+
+.award-item p {
+  font-size: 1rem;
+  color: #343a40;
+  line-height: 1.5;
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -4748,10 +4906,6 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-}
-
-.oculto {
-  visibility: hidden;
 }
 
 .nav-link:hover,
@@ -11567,7 +11721,7 @@ p {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .portfolio .filters a {
@@ -11817,7 +11971,7 @@ pre .code {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -weblit-transform: translate(-50%, -50%);
-  border: 10px solid white;
+  border: 3px solid white;
   -webkit-transition: 0.5s !important;
   transition: 0.5s !important;
   -weblit-transition: 0.5s !important;

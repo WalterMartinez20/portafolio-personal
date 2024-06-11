@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portafolio de Walter Martínez, desarrollador y diseñador Front End en El Salvador. Explora mis proyectos de desarrollo web, habilidades en HTML, CSS, JavaScript y React, y conoce más sobre mi trayectoria y servicios en diseño y desarrollo responsivo de aplicaciones web.">
+    <meta name="keywords" content="Desarrollo Web, Diseñador Front End, Proyectos Web, Portafolio de Programación, Desarrollo Responsivo, UI/UX, JavaScript, HTML, CSS, React, PHP, Desarrollo de Aplicaciones Web, Desarrollador en El Salvador, Walter Martínez">
+    <meta name="author" content="Walter Martínez">
+    <meta http-equiv="content-language" content="en">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="es" href="/public_html/index.html"> <!--indicamos la versión lingüística de la página-->
+    <link rel="alternate" hreflang="en" href="/public_html/index-en.html">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <title>Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="website icon" href="/public_html/assets/imgs/logo2.jpg">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/profile.php?id=100008025097553&mibextid=eQY6cl" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/walter-martinez-4712162b7/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/walter_mrtnz_?igsh=MXducGtiNmE3aHM4&utm_source=qr" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/WalterMartinez20/portafolio-personal.git" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <img src="/public_html/assets/imgs/logo2.jpg" class="logo" alt="Personal brand logo"/>
+            </ul>
+            <!-- <div class="search-container" style="text-align: center; margin-top: 20px;">
+                <input type="text" id="searchInput" placeholder="Search on page..." style="width: 300px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <button onclick="searchContent()" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #007BFF; color: white; cursor: pointer;">Search</button>
+            </div> -->
+            <div class="header-content">
+                <h4 class="header-subtitle">Welcome, I am</h4>
+                <h1 class="header-title">Walter Martínez</h1>
+                <h6 class="header-mono">I am a beginner in Front-end Design and Development</h6>
+                <select name="" id="traductor" onchange="cambiarIndex()" class="btn-traductor">
+                    <option value="all">Traducir</option>
+                    <option value="ingles">Inglés</option>
+                    <option value="espanol">Español</option>
+                </select>
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/PerfilCV.png" alt="CV profile picture" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Walter Martínez</h5>
+                        <div class="brand-subtitle">Front-end Designer | Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">"Exploring the world of design and developing interactive experiences from the vibrant heart of El Salvador"</h5>
+                <p class="mt-20">I am a passionate beginner in Front-end design and development, with great curiosity and enthusiasm to learn and grow in the fascinating world of web creation. I love combining my creativity with my passion for technology to build captivating and functional digital experiences.</p>
+                <p class="mt-20">I excel in a wide range of skills, covering both soft and hard aspects. My soft skills are evident in my creativity and ability to collaborate, always committed to rigorous ethical standards and a mindset of continuous learning. I demonstrate resilience and ease in communication, showing adaptability to the changes and challenges inherent in the work environment. Complementing these soft skills, I have notable proficiency in hard skills, evidenced by my ability to responsibly meet the established objectives in projects. Additionally, I have a deep passion for creating quality web solutions that effectively meet user needs.</p>
+                <button class="btn btn-outline-danger" id="descargarCV">
+                    <i class="icon-down-circled2"></i>Download my CV
+                </button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Information</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Email</span> : medrano.walter2020@gmail.com</li>
+                    <li><span>Phone</span> : + (503) 7912-4503</li>
+                    <li><span>Address</span> :  San Miguel, El Salvador.</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/profile.php?id=100008025097553&mibextid=eQY6cl" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/walter-martinez-4712162b7/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/walter_mrtnz_?igsh=MXducGtiNmE3aHM4&utm_source=qr" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/WalterMartinez20/portafolio-personal.git" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2021 - Present</h6>
+                            <P>Fourth year, VII cycle of Engineering in Systems and Network Computing</P>
+                            <P class="subtitle">Gerardo Barrios University of Usulután</P>
+                            <hr>
+                            <h6 class="title text-danger">2018 - 2020</h6>
+                            <P>General High School</P>
+                            <P class="subtitle">John F. Kennedy National Institute.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>HTML</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>CSS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>JavaScript</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>C#</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>PHP</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>JAVA</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>React</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 12%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>SQL</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Spanish</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-layout text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Simple Responsive Development</h5>
+                            <p class="subtitle">One of my key functions is to develop responsive websites using basic adaptive design techniques so that they look good on both mobile and desktop devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-palette text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">UI/UX Development</h5>
+                            <p class="subtitle">I design and develop attractive and functional user interfaces that enhance usability and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-desktop text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Web Application Development</h5>
+                            <p class="subtitle">Creating interactive and dynamic web applications using technologies such as HTML, CSS, JavaScript, and frameworks like React.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-harddrives text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Basic Testing and Debugging</h5>
+                            <p class="subtitle">One of my tasks is to perform basic testing on different browsers and devices to ensure the site looks good and works correctly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">CSS Frameworks Utilization</h5>
+                            <p class="subtitle">Using CSS frameworks like Bootstrap to speed up the design process and improve the appearance of your websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-receipt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Initial Consultation</h5>
+                            <p class="subtitle">Providing basic advice on web design best practices and helping clients make informed decisions about their websites.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Values Section -->
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Professional Values</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Effective Communication</h5>
+                            <p class="subtitle">I have the ability to communicate ideas and concepts clearly and effectively with both colleagues and clients, ensuring mutual understanding and smooth collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Collaboration</h5>
+                            <p class="subtitle">I recognize the importance of teamwork and am willing to collaborate with other professionals to achieve common goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Ethics</h5>
+                            <p class="subtitle">I maintain high ethical standards in all my design and development practices, including protecting users' privacy and security.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Continuous Learning</h5>
+                            <p class="subtitle">I am always open to learning new technologies and techniques to improve my skills and stay updated in a constantly evolving field.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Responsibility</h5>
+                            <p class="subtitle">I take responsibility for my own actions and contributions in projects, meeting deadlines and established objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Resilience</h5>
+                            <p class="subtitle">Overcoming obstacles and setbacks with determination and perseverance, maintaining a positive and proactive attitude towards challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+<section class="section bg-custom-gray" id="portfolio">
+    <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Projects</h1>
+        <div class="portfolio-container">
+
+            <!-- Local Wonder SV Project -->
+            <div class="col-md-6 col-lg-4 web new">
+                <div class="portfolio-item">
+                    <img src="assets/imgs/localWonder.jpeg" class="img-fluid" alt="Local Wonder SV Project">
+                    <div class="content-holder">
+                        <h6 class="title">Local Wonder SV</h6>
+                        <p class="project-description">Local Wonder SV is a web application designed to help beauty salons manage their appointments and clients efficiently, ensuring a better experience for both owners and clients.</p>
+                        <p><strong>Objective:</strong> Improve appointment and client management for beauty salons.</p>
+                        <p><strong>Process Description:</strong> Designing the database and authentication for efficient management.</p>
+                        <p><strong>Role and Responsibilities:</strong> Backend Programmer, database management and security.</p>
+                        <p><strong>Languages Used:</strong> PHP, SQL.</p>
+                        <a href="https://github.com/WalterMartinez20/WonderHairSv.git" class="link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sportsync Project -->
+            <div class="col-md-6 col-lg-4 web new">
+                <div class="portfolio-item">
+                    <img src="assets/imgs/sportsync.png" class="img-fluid" alt="Sportsync Project">
+                    <div class="content-holder">
+                        <h6 class="title">Sportsync</h6>
+                        <p class="project-description">Sportsync is a web application that facilitates the booking of sports facilities, offering users a quick and easy way to find and book courts for various sports activities.</p>
+                        <p><strong>Objective:</strong> Facilitate the booking of sports facilities through a user-friendly interface.</p>
+                        <p><strong>Process Description:</strong> Involved in all phases from planning to deployment.</p>
+                        <p><strong>Role and Responsibilities:</strong> Full Stack Developer, responsible for database and UI/UX development.</p>
+                        <p><strong>Languages Used:</strong> PHP, HTML, CSS, JavaScript, SQL.</p>
+                        <a href="https://github.com/WalterMartinez20/sportsync.git" class="link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robotics Car Project -->
+            <div class="col-md-6 col-lg-4 advertising new">
+                <div class="portfolio-item">
+                    <img src="assets/imgs/carro.jpeg" class="img-fluid" alt="Robotics Car Project">
+                    <div class="content-holder">
+                        <h6 class="title">Robotics Car</h6>
+                        <p class="project-description">This project involves the development of a robotics car controlled by Arduino, designed for education and entertainment, demonstrating the practical application of programming and electronic engineering in creating automated solutions.</p>
+                        <p><strong>Objective:</strong> Demonstrate the practical application of programming and electronic engineering in robotics.</p>
+                        <p><strong>Process Description:</strong> Building and programming a robotics car controlled by Arduino.</p>
+                        <p><strong>Role and Responsibilities:</strong> Hardware and Software Development, hardware design and assembly, programming controllers and sensors.</p>
+                        <p><strong>Languages Used:</strong> C++.</p>
+                        <a href="https://www.tinkercad.com/things/2Q5T6PIDabX-exquisite-wluff-elzing/editel?returnTo=%2Fthings%2F2Q5T6PIDabX-exquisite-wluff-elzing&sharecode=70BX-y9i6HujTRBTC9lqckShZmF2T0LIQlCrHVJAf1U" class="link">View on Tinkercad</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</section>
+    <!-- End of portfolio section -->
+
+<section id="testimonials" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <!-- <p>"Walter is an exceptional professional with an incredible ability to solve complex problems with innovative solutions."</p> -->
+                    <footer class="blockquote-footer">Lic. Máster. Oscar Roberto Torres Rodríguez</footer>
+                    <a href="/public_html/assets/refe de torres.pdf" target="_blank">View document</a>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <!-- <p>"His dedication and attention to detail in each project ensure high-quality results and customer satisfaction."</p> -->
+                    <footer class="blockquote-footer">Lic. Ms. Herbert Rene Cordero Henriquez</footer>
+                    <a href="/public_html/assets/refe de cordero.pdf" target="_blank">View document</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <!-- <p>"His dedication and attention to detail in each project ensure high-quality results and customer satisfaction."</p> -->
+                    <footer class="blockquote-footer">Lic. José Ovidio Ramos Alcántar</footer>
+                    <a href="/public_html/assets/refe de vicedecano.pdf" target="_blank">View document</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <!-- <p>"His dedication and attention to detail in each project ensure high-quality results and customer satisfaction."</p> -->
+                    <footer class="blockquote-footer">Ing. Marvin Parada</footer>
+                    <a href="/public_html/assets/refe de chelon.pdf" target="_blank">View document</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <!-- <p>"His dedication and attention to detail in each project ensure high-quality results and customer satisfaction."</p> -->
+                    <footer class="blockquote-footer">Ing. Ms. Alcir Gustavo Quintanilla Rodríguez</footer>
+                    <a href="/public_html/assets/refe de alcir.pdf" target="_blank">View document</a>
+                </div>
+            </div>
+            <!-- Continue adding testimonials with links to PDFs as shown above -->
+        </div>
+    </div>
+</section>
+
+<section id="awards" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center">Awards and Recognitions</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="award-item">
+                <a href="/public_html/assets/imgs/certificate_aws.png" data-lightbox="awards" data-title="Award for Excellence in Web Design">
+                    <img src="/public_html/assets/imgs/certificate_aws.png" data-lightbox="awards" alt="Award for Excellence in Web Design" class="img-fluid">
+                </a>
+                    <h4>AWS Discovery Day Certificate: Introduction to Cloud and AWS Services</h4>
+                    <p>This certificate was awarded in 2023 after participating in the AWS Discovery Day event, where a comprehensive introduction to the basics of cloud and AWS services was provided, preparing participants for future AWS courses and certifications, as well as for implementing cloud solutions in professional environments.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="award-item">
+                <a href="/public_html/assets/imgs/certificado_cisco.png" data-lightbox="awards" data-title="Award for Excellence in Web Design">
+                    <img src="/public_html/assets/imgs/certificado_cisco.png" data-lightbox="awards" alt="Recognition as Developer of the Year" class="img-fluid">
+                </a>
+                    <h4>CCNAv7 Certificate: Introduction to Networks</h4>
+                    <p>Obtained in 2023 after successfully completing the 'Introduction to Networks' course, offered by the Cisco Networking Academy. This recognition certifies the understanding of networking fundamentals, including modeling, structuring, and analysis, which are fundamental for the development and management of modern communication networks.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="award-item">
+                <a href="/public_html/assets/imgs/certificado_cisco_redes.png" data-lightbox="awards" data-title="CCNAv7 Certificate: Switching, Routing and Wireless Essentials">
+                    <img src="/public_html/assets/imgs/certificado_cisco.png" data-lightbox="awards" alt="CCNAv7 Certificate: Switching, Routing and Wireless Essentials" class="img-fluid">
+                </a>
+                    <h4>CCNAv7 Certificate: Switching, Routing and Wireless Essentials</h4>
+                    <p>Awarded in 2024 after successfully completing the 'Switching, Routing and Wireless Essentials' course from the Cisco Networking Academy. This certificate validates the ability to configure, manage, and troubleshoot networks involving switching and routing, as well as understanding the essential principles for implementing wireless solutions in business environments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="blog">
+    <div class="container">
+        <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
+        <div class="row">
+            <!-- blog-card -->
+            <div class="blog-card">
+                <div class="img-holder">
+                    <img src="https://i.pinimg.com/736x/de/62/a9/de62a958074e66b6bfd09296d0d42ed1.jpg" alt="How to become a frontend programmer">
+                </div>
+                <div class="content-holder">
+                    <h6 class="title">How to become a frontend programmer? Complete Path</h6>
+                    <p class="post-details">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 300</a>
+                        <a href="#"><i class="ti-comment"></i> 150</a>
+                    </p>
+                    <p>Do you dream of becoming a frontend programmer and don't know where to start? Follow this path and prepare for the career of your dreams.</p>
+                    <a href="https://ed.team/blog/como-convertirse-en-programador-frontend-ruta-completa" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+            <!-- blog-card -->
+            <div class="blog-card">
+                <div class="img-holder">
+                    <img src="https://kodigo.org/wp-content/uploads/2024/02/tendencias-en-desarrollo-web-lo-que-debes-saber-para-2024-1536x863.png" alt="Most demanded programming languages in 2024">
+                </div>
+                <div class="content-holder">
+                    <h6 class="title">The most demanded programming languages in 2024</h6>
+                    <p class="post-details">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 410</a>
+                        <a href="#"><i class="ti-comment"></i> 220</a>
+                    </p>
+                    <p>Find out which are the most demanded languages in the sector and how our bootcamps can accelerate your professional success.</p>
+                    <a href="https://kodigo.org/los-lenguajes-de-programacion-mas-demandados-en-2024/" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+            <!-- blog-card -->
+            <div class="blog-card">
+                <div class="img-holder">
+                    <img src="https://refine-web.imgix.net/blog/2023-12-11-frameworks-2024/social.png?w=800" alt="Best front-end frameworks for 2024">
+                </div>
+                <div class="content-holder">
+                    <h6 class="title">The best front-end frameworks for development in 2024</h6>
+                    <p class="post-details">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 520</a>
+                        <a href="#"><i class="ti-comment"></i> 300</a>
+                    </p>
+                    <p>In 2024, these are the front-end frameworks leading the list. Find out which ones they are and how to select the best one based on criteria such as community support and scalability.</p>
+                    <a href="https://houseof.io/blog/los-mejores-frameworks-front-end-para-el-desarrollo-en-2024/" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a Message</h4>
+                        <form action="https://formspree.io/f/xdoqrloz" method="POST">
+                            <div class="form-group">
+                                <input class="form-control" name="name" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="email" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Contact</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Phone: <br> <span class="text-muted">+ (503) 7912-4503</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address: <br> <span class="text-muted">San Miguel, El Salvador.</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email: <br> <span class="text-muted">medrano.walter2020@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/profile.php?id=100008025097553&mibextid=eQY6cl"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/walter_mrtnz_?igsh=MXducGtiNmE3aHM4&utm_source=qr"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/WalterMartinez20/portafolio-personal.git"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/walter-martinez-4712162b7/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Made by <i class="ti-heart text-danger"></i> <a href="https://www.linkedin.com/in/walter-martinez-4712162b7/" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Walter Martínez</span></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/script.js"></script>
+    <!-- <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        },  'google_translate_element');
+    }
+    </script> -->
+    <script src="/public_html/assets/js/traducir.js"></script>
+    <script src="/public_html/assets/js/CV-en.js"></script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
